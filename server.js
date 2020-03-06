@@ -3,22 +3,22 @@ const express = require('express');
 const path =require('path');
 const app = express();
 
-app.use(express.static(path.join(__dirname, './views/')))
+app.use(express.static(path.join(__dirname, './dist')))
 
 app.get('/',(req , res)=>{
-    res.sendFile(path.join(__dirname, './views/index.html'));
+    res.sendFile(path.join(__dirname, './dist/index.html'));
 })
 
 app.get('/about',(req , res)=>{
-    res.sendFile(path.join(__dirname, './views/about.html'));
+    res.sendFile(path.join(__dirname, './dist/about.html'));
 })
 
-app.get('/work',(req , res)=>{
-    res.sendFile(path.join(__dirname, './views/work.html'));
+app.get('/work',(req , res)=>{ 
+    res.sendFile(path.join(__dirname, './dist/work.html'));
 })
 
 app.get('/contact',(req , res)=>{
-    res.sendFile(path.join(__dirname, './views/contact.html'));
+    res.sendFile(path.join(__dirname, './dist/contact.html'));
 })
 
 
