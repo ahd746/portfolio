@@ -10,15 +10,15 @@ app.get('/',(req , res)=>{
 })
 
 app.get('/about',(req , res)=>{
-    res.sendFile(path.join(__dirname, './dist/about.html'));
+    res.sendFile(path.join(__dirname, './views/about.html'));
 })
 
 app.get('/work',(req , res)=>{
-    res.sendFile(path.join(__dirname, './dist/work.html'));
+    res.sendFile(path.join(__dirname, './views/work.html'));
 })
 
 app.get('/contact',(req , res)=>{
-    res.sendFile(path.join(__dirname, './dist/contact.html'));
+    res.sendFile(path.join(__dirname, './views/contact.html'));
 })
 
 
