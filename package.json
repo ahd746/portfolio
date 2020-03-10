@@ -8,7 +8,6 @@
     "start": "node server.js"
   },
   "author": "Ahmed Salama",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "node-sass": "^4.13.1",
